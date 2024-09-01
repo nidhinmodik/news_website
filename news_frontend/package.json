@@ -23,6 +23,7 @@
     "react-multi-carousel": "^2.8.5",
     "react-spinners": "^0.14.1",
     "react-spinners-components": "^2.0.4",
+    "sharp": "^0.33.5",
     "ua-parser-js": "^1.0.38"
   },
   "devDependencies": {

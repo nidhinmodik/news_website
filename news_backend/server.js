@@ -13,6 +13,7 @@ if (process.env.mode === 'production') {
 } else {
     app.use(cors({
         origin: ["http://localhost:5173", "http://localhost:3000"], // Allow both origins
+        methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
         credentials: true, // If you need to support credentials (e.g., cookies)
     }));
 }
@@ -33,3 +34,4 @@ app.get('/', (req, res) => res.send('Hello World!'));
 const port = process.env.port || 5000; // Use a default port if not defined in .env
 db_connect();
 app.listen(port, () => console.log(`Server is running on port ${port}!`));
+
